@@ -9,7 +9,7 @@ import eci.edu.co.mathcollatz.model.Response;
 import eci.edu.co.mathcollatz.service.CollatzService;
 
 @RestController
-public class CollatzController {
+public class MathController {
 
     private final CollatzService collatzService = new CollatzService();
 
