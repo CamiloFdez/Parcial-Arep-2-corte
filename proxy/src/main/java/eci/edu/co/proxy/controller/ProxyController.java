@@ -16,6 +16,7 @@ public class ProxyController {
 
     private static final String USER_AGENT = "Mozilla/5.0";
     private static final String GET_URL = "http://localhost:8081/collatzsequence?value=";
+    private static final String GET_URL1 = "http://http://ec2-18-234-161-130.compute-1.amazonaws.com/collatzsequence?value=";
 
     @GetMapping(value = "/collatzsequence", produces = "application/json")
     public String collatzsequence(@RequestParam(value = "value") int value) throws IOException {
@@ -29,9 +30,13 @@ public class ProxyController {
 
     private String makeRequest(int value, String method) throws IOException {
         URL obj = new URL(GET_URL + value);
+        URL obj1 = new URL(GET_URL1 + value);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+        HttpURLConnection con1 = (HttpURLConnection) obj1.openConnection();
         con.setRequestMethod(method);
         con.setRequestProperty("User-Agent", USER_AGENT);
+        con1.setRequestMethod(method);
+        con1.setRequestProperty("User-Agent1", USER_AGENT);
 
         int responseCode = con.getResponseCode();
         System.out.println(method + " Response Code :: " + responseCode);
