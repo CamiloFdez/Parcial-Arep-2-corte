@@ -35,7 +35,14 @@ Para la prueba en local debemos ejecutar los 2 servicios del proxy y del math en
 
 ![image](https://github.com/CamiloFdez/Parcial-Arep-2-corte/blob/main/images/localhost.png)
  
-Como podemos ver en la foto al momento de correr la url asignada y poner al final un numero nos da la respuesta del numero de collatz con toda la secuencia del mismo
+Como podemos ver en la foto al momento de correr la url asignada y poner al final un numero nos da la respuesta del numero de collatz con toda la secuencia del mismo, despues de eso creamos un index.html y ya con eso nos queda una interfaz como esta:
+
+![image](https://github.com/CamiloFdez/Parcial-Arep-2-corte/blob/main/images/index.png)
+
+Si nosotros hacemos caer algun servicio o los 2 en este caso aparece de esta manera:
+
+![image](https://github.com/CamiloFdez/Parcial-Arep-2-corte/blob/main/images/parando.png)
+
 
 ## AWS Deployment
 
