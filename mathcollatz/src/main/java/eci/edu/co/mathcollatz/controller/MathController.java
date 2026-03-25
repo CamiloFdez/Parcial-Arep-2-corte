@@ -1,9 +1,12 @@
-package eci.edu.co.mathcollatz;
+package eci.edu.co.mathcollatz.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import eci.edu.co.mathcollatz.model.Response;
+import eci.edu.co.mathcollatz.service.CollatzService;
 
 @RestController
 public class CollatzController {
