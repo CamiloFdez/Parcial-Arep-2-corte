@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProxyController {
 
     private static final String USER_AGENT = "Mozilla/5.0";
-    private static final String GET_URL = "http://localhost:8081/collatzsequence?value=";
+    private static final String GET_URL = "http://ec2-54-174-93-109.compute-1.amazonaws.com:8081/collatzsequence?value=";
     private static final String GET_URL1 = "http://ec2-54-174-93-109.compute-1.amazonaws.com:8081/collatzsequence?value=";
 
     @GetMapping(value = "/collatzsequence", produces = "application/json")
