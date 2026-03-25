@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProxyController {
 
     private static final String USER_AGENT = "Mozilla/5.0";
-    private static final String GET_URL = "http://localhost:8080/collatzsequence?value=";
+    private static final String GET_URL = "http://localhost:8081/collatzsequence?value=";
 
     @GetMapping(value = "/collatzsequence", produces = "application/json")
     public String collatzsequence(@RequestParam(value = "value") int value) throws IOException {
